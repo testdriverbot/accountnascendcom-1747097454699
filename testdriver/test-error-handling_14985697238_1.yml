@@ -1,0 +1,15 @@
+version: 4.2.29
+session: 68229abd2d4f400fff26d3a9
+steps:
+  - prompt: Attempt to submit empty login form.
+    commands:
+      - command: hover-text
+        text: LOG IN
+        description: green login button below the password field
+        action: click
+  - prompt: Assert that appropriate error messages are displayed for missing fields.
+    commands:
+      - command: assert
+        expect: >-
+          Please fill out this field message is displayed near the password
+          input
