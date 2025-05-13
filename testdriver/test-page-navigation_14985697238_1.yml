@@ -1,0 +1,13 @@
+version: 4.2.29
+session: 68229abd2d4f400fff26d3ab
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Click on any link provided
+    commands:
+      - command: hover-text
+        text: Forgot your password?
+        description: link below the password input field
+        action: click
