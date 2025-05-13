@@ -1,0 +1,59 @@
+version: 4.2.29
+session: 68229ac196ea8eddfee16d25
+steps:
+  - prompt: Click the "WITHOUT ACCESS CODE" button under SIGN UP.
+    commands:
+      - command: hover-text
+        text: WITHOUT ACCESS CODE
+        description: button under SIGN UP section
+        action: click
+  - prompt: Fill in the required details for sign up.
+    commands:
+      - command: hover-text
+        text: First (preferred) name
+        description: first name input field
+        action: click
+      - command: type
+        text: John
+      - command: hover-text
+        text: Last name
+        description: last name input field
+        action: click
+      - command: type
+        text: Doe
+      - command: hover-text
+        text: Your organization
+        description: organization input field
+        action: click
+      - command: type
+        text: Tech Corp
+      - command: hover-text
+        text: Your title/role
+        description: title/role input field
+        action: click
+      - command: type
+        text: Engineer
+      - command: hover-text
+        text: Phone number
+        description: phone number input field
+        action: click
+      - command: type
+        text: '1234567890'
+      - command: hover-text
+        text: City
+        description: city input field
+        action: click
+      - command: type
+        text: New York
+      - command: hover-text
+        text: State
+        description: state input field
+        action: click
+      - command: type
+        text: NY
+      - command: hover-text
+        text: Zip code
+        description: zip code input field
+        action: click
+      - command: type
+        text: '10001'
