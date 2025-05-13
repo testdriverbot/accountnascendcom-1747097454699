@@ -1,0 +1,11 @@
+version: 4.2.29
+session: 68229ac12d4f400fff26d3ad
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Verify the presence of the image on the right.
+    commands:
+      - command: wait-for-image
+        description: woman holding a baby next to a crib on a teal background
