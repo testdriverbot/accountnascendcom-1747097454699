@@ -1,0 +1,19 @@
+version: 4.2.29
+session: 68229abd74573a783381968d
+steps:
+  - prompt: Check the presence of contact email displayed at the bottom.
+    commands:
+      - command: scroll-until-text
+        text: info@nascend.com
+        direction: down
+        method: keyboard
+      - command: assert
+        expect: info@nascend.com is visible
+  - prompt: Assert that "info@nascend.com" is displayed correctly and is clickable.
+    commands:
+      - command: hover-text
+        text: info@nascend.com
+        description: contact email at the bottom of the page
+        action: click
+      - command: assert
+        expect: info@nascend.com is clickable and visible
